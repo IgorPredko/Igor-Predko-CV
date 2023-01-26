@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ////////////////NAVIGATION//////////////////////// -->
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-row">
+          <a href="./index.html" class="logo">MY<strong>portfolio</strong></a>
+
+          <button class="dark-mode-btn">
+            <img
+              src="./img/icons/sun.svg"
+              alt="Light mode"
+              class="dark-mode-btn__icon"
+            />
+            <img
+              src="./img/icons/moon.svg"
+              alt="Dark mode"
+              class="dark-mode-btn__icon"
+            />
+          </button>
+
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a
+                href="./index.html"
+                class="nav-list__link nav-list__link--active"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="./skills.html" class="nav-list__link">Skills</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./contacts.html" class="nav-list__link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ////////////////HEADER//////////////////////// -->
+    <header class="header">
+      <div class="header__wrapper">
+        <h1 class="header__title">
+          <strong>Hi, my name is <em>Igor</em></strong
+          ><br />
+          a frontend developer
+        </h1>
+        <div class="header__text">
+          <p>with passion for learning and creating.</p>
+        </div>
+        <a href="my_CV/Igor_Predko_Resume.pdf" class="btn" download
+          >Download CV</a
+        >
+      </div>
+    </header>
+    <!-- ////////////////MAIN//////////////////////// -->
+    <main class="section">
+      <div class="container">
+        <h2 class="title-1">Projects</h2>
+        <ul class="projects">
+          <li class="project">
+            <a href="./project-page-1.html">
+              <img
+                src="./img/projects/01.png"
+                alt="Project img"
+                class="project__img"
+              />
+              <h3 class="project__title">National Parks</h3>
+            </a>
+          </li>
+          <li class="project">
+            <a href="./project-page-2.html">
+              <img
+                src="./img/projects/02.png"
+                alt="Project img"
+                class="project__img"
+              />
+              <h3 class="project__title">Book Library</h3>
+            </a>
+          </li>
+          <li class="project">
+            <a href="./project-page-3.html">
+              <img
+                src="./img/projects/03.png"
+                alt="Project img"
+                class="project__img"
+              />
+              <h3 class="project__title">Resident Evil Timeline</h3>
+            </a>
+          </li>
+
+          <li class="project">
+            <a href="./project-page-4.html">
+              <img
+                src="./img/projects/04.png"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+            <h3 class="project__title">Mini Game on JS</h3>
+          </li>
+          <li class="project">
+            <a href="./project-page-5.html">
+              <img
+                src="./img/projects/05.png"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+            <h3 class="project__title">Weather App</h3>
+          </li>
+          <li class="project">
+            <a href="./project-page-6.html">
+              <img
+                src="./img/projects/06.png"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+            <h3 class="project__title">Tic-Tac-Toe</h3>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- ////////////////FOOTER//////////////////////// -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="social">
+            <li class="social__item">
+              <a href="https://github.com/IgorPredko"
+                ><img src="./img/icons/gitHub.svg" alt="Link"
+              /></a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.linkedin.com/in/igor-predko-539ab0262/"
+                ><img src="./img/icons/linkedIn.svg" alt="Link"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
