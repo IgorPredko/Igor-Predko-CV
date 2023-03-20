@@ -1,4 +1,6 @@
 const btnDarkMode = document.querySelector(".dark-mode-btn");
+const projects = document.querySelectorAll(".project");
+const linkBtn = document.querySelectorAll(".btn-outline");
 
 if (
   window.matchMedia &&
@@ -6,14 +8,32 @@ if (
 ) {
   btnDarkMode.classList.add("dark-mode-btn--active");
   document.body.classList.add("dark");
+  projects.forEach((project) => {
+    project.classList.add("hover-black");
+  });
+  linkBtn.forEach((btn) => {
+    btn.style.color = "#e3b308";
+  });
 }
 
 if (localStorage.getItem("darkMode") === "dark") {
   btnDarkMode.classList.add("dark-mode-btn--active");
   document.body.classList.add("dark");
+  projects.forEach((project) => {
+    project.classList.add("hover-dark");
+  });
+  linkBtn.forEach((btn) => {
+    btn.style.color = "#e3b308";
+  });
 } else if (localStorage.getItem("darkMode") === "light") {
   btnDarkMode.classList.remove("dark-mode-btn--active");
   document.body.classList.remove("dark");
+  projects.forEach((project) => {
+    project.classList.remove("hover-dark");
+  });
+  linkBtn.forEach((btn) => {
+    btn.style.color = "#000";
+  });
 }
 
 window
@@ -38,8 +58,19 @@ btnDarkMode.onclick = function () {
 
   if (isDark) {
     localStorage.setItem("darkMode", "dark");
+    projects.forEach((project) => {
+      project.classList.add("hover-dark");
+    });
+    linkBtn.forEach((btn) => {
+      btn.style.color = "#e3b308";
+    });
   } else {
     localStorage.setItem("darkMode", "light");
+    projects.forEach((project) => {
+      project.classList.remove("hover-dark");
+    });
+    linkBtn.forEach((btn) => {
+      btn.style.color = "#000";
+    });
   }
 };
-
